@@ -1,0 +1,13 @@
+.block_menu{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 184px;
+    height: 169px;
+    opacity: 1;
+}
+@media (max-width: 600px){
+    .block_menu{
+        height: auto;
+    }
+}

@@ -1,0 +1,14 @@
+.row{
+    height: 24px;
+    width: 100%;
+    text-align: right;
+    font: normal normal normal 20px/32px Montserrat;
+    letter-spacing: 0;
+    color: #FFFFFF;
+    opacity: 1;
+}
+@media (max-width: 600px){
+    .row{
+        margin-bottom: 5px;
+    }
+}
