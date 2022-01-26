@@ -1,2 +1,4 @@
-const Dialog = ()=> <div></div>
+const Dialog = ()=> <div>
+    Dialog
+</div>
 export default Dialog;
