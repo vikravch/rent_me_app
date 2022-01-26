@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+    box-sizing: border-box;
+}
+
+
+@font-face {
+    font-family: Montserrat;
+    src: url('../../../fonts/Montserrat-Regular.ttf');
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 250px;
+    background: #0F4C81 0 0 no-repeat padding-box;
+    border: 1px solid #707070;
+    opacity: 1;
+}
+
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    width: 1365px;
+    height: 169px;
+    opacity: 1;
+}
+
+.wrapper_left {
+    width: 554px;
+    height: 169px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.blockText {
+    width: 554px;
+    height: 64px;
+    text-align: left;
+    font: normal normal normal 24px/32px Montserrat;
+    letter-spacing: 0;
+    color: #FFFFFF;
+    opacity: 1;
+}
+
+.wrapper_right {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    width: 150px;
+    height: 169px;
+    opacity: 1;
+}
+
+.wrapper_social {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 39px;
+}
+
+.search {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 300px;
+    height: 50px;
+    background: #FFFFFF 0 0 no-repeat padding-box;
+    box-shadow: 0 3px 6px #00000029;
+    border-radius: 5px;
+    opacity: 1;
+}
+
+.inputFooter {
+    width: 133px;
+    height: 19px;
+    text-align: left;
+    font: normal normal normal 16px/19px Montserrat;
+    letter-spacing: 0;
+    color: #7B7A78;
+    opacity: 0.4;
+}
+
+.but {
+    width: 23px;
+    height: 19px;
+    text-align: left;
+    font: normal normal normal 16px/19px Montserrat;
+    letter-spacing: 0;
+    color: #0F4C81;
+    opacity: 1;
+    background: #FFFFFF 0 0 no-repeat padding-box;
+}
+
+.author {
+    width: 145px;
+    height: 19px;
+    text-align: center;
+    font: normal normal normal 16px/19px Montserrat;
+    letter-spacing: 0;
+    color: #FFFFFF;
+    opacity: 1;
+}
+
+@media (max-width: 600px) {
+
+    footer {
+        width: 100%;
+        height: auto;
+    }
+
+    .container {
+        width: auto;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .wrapper_left{
+        margin-bottom: 5px;
+        align-items: center;
+    }
+}
