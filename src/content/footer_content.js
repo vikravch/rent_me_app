@@ -1,8 +1,8 @@
 import React from 'react';
 
 
-export const imgFb =  require('../img/facebook.svg').default;
-export const imgTw =  require('../img/twitter.svg').default;
+export const imgFb =  require('../images/facebook.svg').default;
+export const imgTw =  require('../images/twitter.svg').default;
 export const arrSocial = [imgFb, imgTw];
 
 export const textSubscribe = "Subscribe to our newsletter to receive exclusive information about us and our services"
