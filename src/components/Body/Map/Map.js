@@ -5,15 +5,21 @@ import MapImg from "../../../images/MainBody/Map/Map.png"
 console.log(MapImg)
 const Map = () => {
     return (
-        <div>
-                <MapImage src={MapImg} alt="Map"/>
-        </div>
+        <>
+                <Image src={MapImg} alt="Map"/>
+        </>
     );
 };
 
 export default Map;
 
-const MapImage = styled.img `
-  width: 611px;
-  height: 711px;
+const Image = styled.img`
+  margin-top: 20px;
+  width: 830px;
+  height: 1135px;
+  @media (max-width: 600px) {
+    width: auto;
+    height: auto;
+    margin: 0;
+  }
 `

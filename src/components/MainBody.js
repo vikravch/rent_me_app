@@ -10,7 +10,7 @@ const MainBody = () => {
             <PopularCities />
             <Margin/>
             <Search />
-            {/*<MapAndHouses />*/}
+            <MapAndHouses />
         </>
     );
 };

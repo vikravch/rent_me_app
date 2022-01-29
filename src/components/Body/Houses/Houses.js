@@ -83,31 +83,31 @@ const houseData = [
 ]
 const Houses = () => {
     return (
-        <div>
+        <HousesContainer>
 
                 {
                     houseData.map(item => {
                         const {img, about, data, price} = item;
                         return <div>
-                            <img src={img} alt="..."/>
+                            <House src={img} alt="..."/>
 
-                            <div>
-                                <div>
-                                        <p>{about}</p>
-                                            <p>{data.map(dt => {
-                                                return <Div>
-                                                    <P>{dt.picture}</P>
-                                                    <P>{dt.description}d</P>
-                                                </Div>
-                                            })}</p>
-                                        <p>&#8362;{price}</p>
-                                </div>
-                            </div>
+                            <HouseInfo>
+                                <p>{about}</p>
+                                <p>{data.map(dt => {
+                                    return <Div>
+                                        <P>{dt.picture}</P>
+                                        <P>{dt.description}d</P>
+                                    </Div>
+                                })}</p>
+                                <p>&#8362;{price}</p>
+                            </HouseInfo>
+
+
                         </div>
                     })
                 }
 
-        </div>
+        </HousesContainer>
     );
 };
 
@@ -127,23 +127,15 @@ export default Houses;
 {/*    </Paragraph>*/}
 {/*</div>*/}
 
-const Image = styled.img`
-  width: 300px;
-  height: 110px;
-
-  
-    `
-const Paragraph = styled.div`
+const HousesContainer = styled.div`
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  width: 300px;
-  height: 60px;
-  background-color: #1d3993;
-  margin-bottom: 10px;
-  font-size: 10px;
-  color: white;
-`
+  flex-direction: column;
+  justify-content: space-around;
+  //background: black;
+  @media (max-width: 600px) {
+    width: auto;
+    `
+
 
 const P = styled.div`
   display: flex;
@@ -157,7 +149,31 @@ const Div = styled.div`
   flex-direction: row;
 
 `
-const About = styled.div`
-  font-size: 11px;
-  word-break: break-all;
-`
+
+const House = styled.img`
+  &:first-child {
+    margin-top: 20px;
+  }
+  width: 500px;
+  height: 200px;
+  @media (max-width: 600px) {
+    width: 100%;
+    &:first-child {
+      margin: 0;
+    }
+  }
+    `
+const HouseInfo = styled.div`
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 500px;
+  height: 100px;
+  background: #0f4c81;
+  color: white;
+  margin-bottom: 20px;
+  @media (max-width: 600px) {
+    width: auto;
+  }
+    `
