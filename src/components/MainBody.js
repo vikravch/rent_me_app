@@ -8,7 +8,8 @@ const MainBody = () => {
     return (
         <>
             <PopularCities />
-            {/*<Search />*/}
+            <Margin/>
+            <Search />
             {/*<MapAndHouses />*/}
         </>
     );
@@ -23,9 +24,9 @@ export default MainBody;
 //
 // `
 
-const Container = styled.div `
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  width: 1365px;
+const Margin = styled.div `
+  margin: 20px 0;
+  @media (max-width: 600px) {
+    margin: 0;
+  }
 `
