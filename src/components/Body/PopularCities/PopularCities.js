@@ -49,6 +49,6 @@ const Cities = styled.h1`
   display: flex;
   flex-direction: row;
   justify-content: center;
-  color: #004152;
+  color: #0f4c81;
   font-weight: bold;
 `
