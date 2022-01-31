@@ -1,4 +1,4 @@
-import {CHANGE_USER_LOGIN, CHANGE_USER_PHONE, CHANGE_USER_USERNAME} from "./types";
+import {CHANGE_USER_LOGIN, CHANGE_USER_PHONE, CHANGE_USER_TOKEN, CHANGE_USER_USERNAME} from "./types";
 
 export const changeUserName = (userName) =>({
     type : CHANGE_USER_USERNAME,
@@ -13,4 +13,9 @@ export const changeUserLogin = (login) =>({
 export const changeUserPhone = (phone) =>({
     type : CHANGE_USER_PHONE,
     payload : phone
+})
+
+export const changeUserToken = (token) =>({
+    type : CHANGE_USER_TOKEN,
+    payload : token
 })
