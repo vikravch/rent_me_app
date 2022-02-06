@@ -1,5 +1,5 @@
 import React from "react";
-import logo from "../images/logo-1.png";
+import logo from "../../../../res/images/logo-1.png";
 
 const styles = {
     h1: {

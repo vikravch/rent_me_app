@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './footer.module.css';
 import FooterBlockMenu from "../footer_block_menu/FooterBlockMenu";
-import {textSubscribe,textAuthor,blocksMenuFooter,arrSocial} from "../../../content/footer_content"
+import {textSubscribe,textAuthor,blocksMenuFooter,arrSocial} from "../../footer_content"
 import FooterSocialImg from "../footer_social_img/FooterSocialImg";
 
 const Footer = () => {
