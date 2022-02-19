@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;1,500&display=swap');
+
+.SignUp {
+    position: absolute;
+    top: 90px;
+    left: 510px;
+    width: 900px;
+    height: 500px;
+    background: #0f4c81 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 6px #00000029;
+    border-radius: 5px;
+}
+
+.ETM{
+    position: absolute;
+    top: 25px;
+    left: 820px;
+    width: 30px;
+    height: 30px;
+    opacity: 1;
+    background-color: #0f4c81;
+    border: none;
+    color: #FFFFFF;
+    font-size: 18px;
+}
+
+.Title {
+    display: flex;
+    justify-content: center;
+    color: #ffffff;
+    font: medium font-size-60 line-spacing-73;
+    font-family: montserrat, serif;
+    font-size: 60px;
+    letter-spacing: 0;
+    opacity: 1;
+}
+
+
+.SubTitle{
+    width: 420px;
+    position: relative;
+    display: flex;
+    color: #ffffff;
+    opacity: 80%;
+    font-size: 18px;
+    letter-spacing: 0;
+    font-weight: 100;
+    left: 240px;
+    justify-content: space-between;
+}
+
+
+
+.BtnSI{
+    width: 120px;
+    height: 40px;
+    color: #0f4c81;
+    text-align: center;
+    font: normal normal normal 16px/19px Montserrat;
+    border: 0px #FFFFFF solid;
+    border-radius: 5px;: 0px;
+    opacity: 1;
+
+}
+
+.BtnSI:hover{
+    box-shadow: 0 0 10px 1px #FFFFFF;
+    transition: 0.2s;
+}
+
+.Btncnl{
+    width: 120px;
+    height: 40px;
+    text-align: left;
+    font: normal normal medium Montserrat;
+    font-size: 16px;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    background-color: #0f4c81;
+    border: none;
+}
+
+.Btncnl:hover{
+    transition: 0.2s;
+    font-size: 20px;
+}
+
+.btn{
+    display: flex;
+    width: 900px;
+    flex-direction: row;
+    justify-content: center;
+    gap: 12rem;
+    margin-top: 40px;
+}
+
+.Nry{
+    color: #ffffff;
+    text-align: left;
+    font: normal normal normal 16px/19px Montserrat;
+    opacity: 0.4;
+}
+
+.SU {
+    color: #ffffff;
+    text-align: left;
+    font: normal normal normal 16px/19px Montserrat;
+    opacity: 1;
+}
+
+input::placeholder {
+    color: #FFFFFF;
+    opacity: 20%;
+    font-size: 18px;
+}
+
+.Inp{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    gap: 1rem;
+}
+
+input{
+    width: 420px;
+    height: 30px;
+    border: none;
+    border-bottom: 1px solid white;
+    background-color: transparent;
+    color: inherit;
+    outline: none;
+    font-size: 24px;
+}
+
+.footer{
+    left: 240px;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    margin-top: 50px;
+    gap: 20px;
+}
