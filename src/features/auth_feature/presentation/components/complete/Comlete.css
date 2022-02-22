@@ -1,0 +1,67 @@
+.Complete {
+    position: absolute;
+    top: 90px;
+    left: 510px;
+    width: 900px;
+    height: 500px;
+    background: #0f4c81 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 6px #00000029;
+    border-radius: 5px;
+}
+
+.Title {
+    display: flex;
+    justify-content: center;
+    color: #ffffff;
+    font: medium font-size-60 line-spacing-73;
+    font-family: montserrat, serif;
+    font-size: 60px;
+    letter-spacing: 0;
+    opacity: 1;
+}
+.btn{
+
+    width: 180px;
+    height: 50px;
+    color: #0f4c81;
+    text-align: center;
+    padding-top: 15px;
+    font: normal normal normal 16px/19px Montserrat;
+    border: 0px #FFFFFF solid;
+    border-radius: 5px;: 0px;
+    opacity: 1;
+}
+
+.btnD{
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    margin-top: 40px;
+    top: 150px;
+    height: 200px;
+}
+
+.Btn:hover{
+    box-shadow: 0 0 10px 1px #FFFFFF;
+    transition: 0.2s;
+}
+
+.Sub{
+    color: #FFFFFF;
+    text-align: center;
+    font-weight: lighter;
+    font-family: montserrat, serif;
+}
+
+.ETM{
+    position: absolute;
+    top: 25px;
+    left: 820px;
+    width: 30px;
+    height: 30px;
+    opacity: 1;
+    background-color: #0f4c81;
+    border: none;
+    color: #FFFFFF;
+    font-size: 18px;
+}

@@ -6,9 +6,11 @@ const SignUp = () => {
         <div className="SignUp">
             <button className="ETM">&#10006;</button>
             <h1 className="Title">What about you?</h1>
-            <div className="SubTitle">
-                <p>User</p>
-                <p>Owner</p>
+            <div className="radio">
+                <input type="radio" id="User" name="User" className="custom-radio"/>
+                <label for="User">User</label>
+                <input type="radio" id="Owner" name="Owner" className="custom-radio"/>
+                <label for="Owner">Owner</label>
             </div>
             <div className="Inp">
                 <input placeholder={'your name'}/>
@@ -16,8 +18,8 @@ const SignUp = () => {
                 <input placeholder={'your phone number'}/>
             </div>
             <div className="btn">
-                <button className="Btncnl">Cancel</button>
-                <button className="BtnSI">Next step</button>
+                <button className="BtnCancel">Cancel</button>
+                <button className="BtnNS">Next step</button>
             </div>
         </div>
     );

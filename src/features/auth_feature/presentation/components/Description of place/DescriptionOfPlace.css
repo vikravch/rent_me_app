@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;1,500&display=swap');
+
+.DescriptionOfPlace {
+    position: absolute;
+    top: 90px;
+    left: 510px;
+    width: 900px;
+    height: 1000px;
+    background: #0f4c81 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 6px #00000029;
+    border-radius: 5px;
+}
+
+.Title {
+    position: relative;
+    top: 30px;
+    display: flex;
+    justify-content: center;
+    color: #ffffff;
+    font: medium font-size-60 line-spacing-73;
+    font-family: montserrat, serif;
+    font-size: 60px;
+    letter-spacing: 0;
+    opacity: 1;
+}
+
+.Btns{
+    width: 150px;
+    height: 60px;
+    color: #0f4c81;
+    font: normal normal normal 16px/19px Montserrat;
+    border: 0px #FFFFFF solid;
+    border-radius: 5px;: 0px;
+    opacity: 1;
+
+}
+
+.Btns:hover{
+    box-shadow: 0 0 10px 1px #FFFFFF;
+    transition: 0.2s;
+}
+
+.Btncnl{
+    width: 150px;
+    height: 60px;
+    background-color: #0f4c81;
+    color: #FFFFFF;
+    font: normal normal normal 16px/19px Montserrat;
+    border: 0px #FFFFFF solid;
+    border-radius: 5px;: 0px;
+    opacity: 1;
+}
+
+.Btncnl:hover{
+    transition: 0.2s;
+    font-size: 20px;
+}
+
+.btn1{
+    position: absolute;
+    display: inline-flex;
+    justify-content:  space-around;
+    top: 200px;
+    margin-top: 40px;
+    width: 400px;
+    left: 250px;
+}
+
+.btn2{
+    position: absolute;
+    display: inline-flex;
+    justify-content: space-around;
+    top: 450px;
+    margin-top: 40px;
+    width: 400px;
+    left: 250px;
+}
+
+.btn3{
+    position: absolute;
+    display: inline-flex;
+    justify-content:  space-around;
+    top: 850px;
+    margin-top: 40px;
+    width: 400px;
+    left: 250px;
+}
+
+.inp::placeholder {
+    color: black;
+    opacity: 40%;
+    font-size: 18px;
+}
+
+.inp{
+    position: absolute;
+    width: 400px;
+    height: 200px;
+    border: none;
+    outline: none;
+    font-size: 24px;
+    background-color: #FFFFFF;
+    left: 250px;
+    top: 580px;
+    text-align: center;
+    resize: none;
+}
+
+.ETM{
+    position: absolute;
+    top: 25px;
+    left: 820px;
+    width: 30px;
+    height: 30px;
+    opacity: 1;
+    background-color: #0f4c81;
+    border: none;
+    color: #FFFFFF;
+    font-size: 18px;
+}
+
+.btnAdd{
+    width: 110px;
+    height: 110px;
+    color: #0f4c81;
+    font: normal normal normal 16px/19px Montserrat;
+    border: 0px #FFFFFF solid;
+    border-radius: 5px;: 0px;
+    opacity: 1;
+}
+
+.btn4{
+    position: absolute;
+    display: inline-flex;
+    justify-content:  space-around;
+    top: 300px;
+    margin-top: 40px;
+    width: 400px;
+    left: 250px;
+}
+
+.btnAdd:hover{
+    box-shadow: 0 0 10px 1px #FFFFFF;
+    transition: 0.2s;
+}
+
+.image{
+    width: 110px;
+    height: 110px;
+    background-color: #FFFFFF;
+    border: 0px #FFFFFF solid;
+    border-radius: 5px;: 0px;
+    opacity: 1;
+}

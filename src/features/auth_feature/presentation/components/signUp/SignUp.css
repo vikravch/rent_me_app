@@ -2,7 +2,7 @@
 
 .SignUp {
     position: absolute;
-    top: 90px;
+    top: 100px;
     left: 510px;
     width: 900px;
     height: 500px;
@@ -12,7 +12,7 @@
 }
 
 .ETM{
-    position: absolute;
+    position: relative;
     top: 25px;
     left: 820px;
     width: 30px;
@@ -35,23 +35,58 @@
     opacity: 1;
 }
 
-
-.SubTitle{
-    width: 420px;
+.radio{
     position: relative;
-    display: flex;
-    color: #ffffff;
-    opacity: 80%;
-    font-size: 18px;
-    letter-spacing: 0;
-    font-weight: 100;
     left: 240px;
+    width: 400px;
+    display: flex;
     justify-content: space-between;
 }
 
 
+.custom-radio {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
 
-.BtnSI{
+}
+
+.custom-radio+label {
+    display: inline-flex;
+    justify-content: space-between;
+    user-select: none;
+    color: #FFFFFF;
+    font-size: 20px;
+}
+/* создание в label псевдоэлемента  before со следующими стилями */
+.custom-radio+label::before {
+    content: '';
+    width: 1em;
+    height: 1em;
+    flex-shrink: 0;
+    flex-grow: 0;
+    border: 1px solid #adb5bd;
+    border-radius: 50%;
+    margin-right: 0.5em;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 50% 50%;
+}
+
+
+
+/* стили для радиокнопки, находящейся в состоянии checked */
+.custom-radio:checked+label::before {
+    border-color: #0b76ef;
+    background-color: #0b76ef;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='%23fff'/%3e%3c/svg%3e");
+}
+
+
+
+.BtnNS{
+    position: relative;
+    left: 220px;
     width: 120px;
     height: 40px;
     color: #0f4c81;
@@ -63,15 +98,14 @@
 
 }
 
-.BtnSI:hover{
+.BtnNS:hover{
     box-shadow: 0 0 10px 1px #FFFFFF;
     transition: 0.2s;
 }
 
-.Btncnl{
+.BtnCancel{
     width: 120px;
     height: 40px;
-    text-align: left;
     font: normal normal medium Montserrat;
     font-size: 16px;
     letter-spacing: 0px;
@@ -80,32 +114,19 @@
     border: none;
 }
 
-.Btncnl:hover{
+.BtnCancel:hover{
     transition: 0.2s;
     font-size: 20px;
 }
 
 .btn{
-    display: flex;
-    width: 900px;
-    flex-direction: row;
-    justify-content: center;
+    display: inline;
+    position: relative;
+    top: 70px;
+    left: 200px;
     gap: 12rem;
     margin-top: 40px;
-}
-
-.Nry{
-    color: #ffffff;
-    text-align: left;
-    font: normal normal normal 16px/19px Montserrat;
-    opacity: 0.4;
-}
-
-.SU {
-    color: #ffffff;
-    text-align: left;
-    font: normal normal normal 16px/19px Montserrat;
-    opacity: 1;
+    width: 400px;
 }
 
 input::placeholder {
@@ -115,6 +136,8 @@ input::placeholder {
 }
 
 .Inp{
+    position: relative;
+    top: 30px;
     display: flex;
     flex-direction: column;
     align-items:center;
@@ -130,14 +153,4 @@ input{
     color: inherit;
     outline: none;
     font-size: 24px;
-}
-
-.footer{
-    left: 240px;
-    position: relative;
-    display: flex;
-    flex-direction: row;
-    justify-content: left;
-    margin-top: 50px;
-    gap: 20px;
 }
