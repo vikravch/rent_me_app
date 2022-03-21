@@ -1,14 +1,14 @@
-import './DescriptionOfPlace.css';
+import './descriptionOfPlace.css';
 import React from 'react';
 
 const DescriptionOfPlace = () => {
     return (
-        <div className="DescriptionOfPlace">
-            <button className="ETM">&#10006;</button>
-            <h1 className="Title">Description of place</h1>
+        <div className="descriptionOfPlace">
+            <button className="etm">&#10006;</button>
+            <h1 className="title">Description of place</h1>
             <div className="btn1">
-                <button className="Btns">Price</button>
-                <button className="Btns">Type</button>
+                <button className="btns">Price</button>
+                <button className="btns">Type</button>
             </div>
             <div className="btn4">
                 <img className="image"/>
@@ -16,13 +16,13 @@ const DescriptionOfPlace = () => {
                 <button className="btnAdd">Add photo + </button>
             </div>
             <div className="btn2">
-                <button className="Btns">Rooms</button>
-                <button className="Btns">Amenities</button>
+                <button className="btns">Rooms</button>
+                <button className="btns">Amenities</button>
             </div>
             <textarea className="inp" placeholder={'Description of place'}/>
             <div className="btn3">
-                <button className="Btncnl">Cancel</button>
-                <button className="Btns">Publish</button>
+                <button className="btncnl">Cancel</button>
+                <button className="btns">Publish</button>
             </div>
         </div>
     );

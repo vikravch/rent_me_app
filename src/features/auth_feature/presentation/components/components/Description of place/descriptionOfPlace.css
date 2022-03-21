@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;1,500&display=swap');
 
-.DescriptionOfPlace {
+.descriptionOfPlace {
     position: absolute;
     top: 90px;
     left: 510px;
@@ -11,7 +11,7 @@
     border-radius: 5px;
 }
 
-.Title {
+.title {
     position: relative;
     top: 30px;
     display: flex;
@@ -24,7 +24,7 @@
     opacity: 1;
 }
 
-.Btns{
+.btns{
     width: 150px;
     height: 60px;
     color: #0f4c81;
@@ -35,12 +35,12 @@
 
 }
 
-.Btns:hover{
+.btns:hover{
     box-shadow: 0 0 10px 1px #FFFFFF;
     transition: 0.2s;
 }
 
-.Btncnl{
+.btncnl{
     width: 150px;
     height: 60px;
     background-color: #0f4c81;
@@ -51,7 +51,7 @@
     opacity: 1;
 }
 
-.Btncnl:hover{
+.btncnl:hover{
     transition: 0.2s;
     font-size: 20px;
 }
@@ -106,7 +106,7 @@
     resize: none;
 }
 
-.ETM{
+.etm{
     position: absolute;
     top: 25px;
     left: 820px;

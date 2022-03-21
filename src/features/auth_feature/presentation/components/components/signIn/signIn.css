@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;1,500&display=swap');
 
-.SignIn {
+.signIn {
     position: absolute;
     top: 90px;
     left: 510px;
@@ -13,7 +13,7 @@
 
 }
 
-.ETM{
+.etm{
     position: absolute;
     top: 25px;
     left: 820px;
@@ -26,7 +26,7 @@
     font-size: 18px;
 }
 
-.Title {
+.title {
     display: flex;
     justify-content: center;
     color: #ffffff;
@@ -37,7 +37,7 @@
     opacity: 1;
 }
 
-.BtnSI{
+.btnSI{
     width: 120px;
     height: 40px;
     color: #0f4c81;
@@ -49,12 +49,12 @@
 
 }
 
-.BtnSI:hover{
+.btnSI:hover{
     box-shadow: 0 0 10px 1px #FFFFFF;
     transition: 0.2s;
 }
 
-.Btncnl{
+.btncnl{
     width: 120px;
     height: 40px;
     text-align: left;
@@ -66,7 +66,7 @@
     border: none;
 }
 
-.Btncnl:hover{
+.btncnl:hover{
     transition: 0.2s;
     font-size: 20px;
 }
@@ -80,14 +80,14 @@
     margin-top: 40px;
 }
 
-.Nry{
+.nry{
     color: #ffffff;
     text-align: left;
     font: normal normal normal 16px/19px Montserrat;
     opacity: 0.4;
 }
 
-.SU {
+.su {
     color: #ffffff;
     text-align: left;
     font: normal normal normal 16px/19px Montserrat;
@@ -100,7 +100,7 @@ input::placeholder {
     font-size: 18px;
 }
 
-.Inp{
+.inp{
     display: flex;
     flex-direction: column;
     align-items:center;
