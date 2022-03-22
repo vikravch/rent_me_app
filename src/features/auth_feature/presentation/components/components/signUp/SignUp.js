@@ -8,20 +8,22 @@ const SignUp = () => {
     const dispatch = useDispatch();
 
     async function senData() {
-        const url = 'http://localhost:3000/';
+        const url = 'https://reqbin.com/echo/post/json';
         const data = store.getState();
 
         try {
             const response = await fetch(url, {
                 method: 'POST',
-                body: JSON.stringify(data)
+                body: JSON.stringify(data),
+                headers: {
+                    'Content-Type': 'application/json'
+                }
             });
-            const json = response.statusMessage;
-            console.log(json);
+            const json = await response.json();
+            console.log('Успех:', JSON.stringify(json));
         } catch (error) {
-            console.error(error);
+            console.error('Ошибка:', error);
         }
-
     }
 
     return (
@@ -30,16 +32,16 @@ const SignUp = () => {
             <h1 className="title">What about you?</h1>
             <div className="dis">
                 <div className="radio">
-                <input className="custom-radio" type="radio" id="User1" name="Users" value="User"
-                       onChange={e=>dispatch(roleAction(e.target.value))}/>
+                    <input className="custom-radio" type="radio" id="User1" name="Users" value="User"
+                           onChange={e=>dispatch(roleAction(e.target.value))}/>
                     <label htmlFor="User1">User</label>
-            </div>
+                </div>
 
-            <div className="radio">
-                <input className="custom-radio" type="radio" id="User2" name="Users" value="Owner"
-                       onChange={e=>dispatch(roleAction(e.target.value))}/>
+                <div className="radio">
+                    <input className="custom-radio" type="radio" id="User2" name="Users" value="Owner"
+                           onChange={e=>dispatch(roleAction(e.target.value))}/>
                     <label htmlFor="User2">Owner</label>
-            </div>
+                </div>
             </div>
             <div className="inp">
                 <input placeholder={'your name'}
